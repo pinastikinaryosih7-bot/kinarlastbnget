@@ -73,6 +73,21 @@
 						</a>
 					</div>
 				</form>
+				<!-- 1. Pastikan tag form bawaan template kamu dikasih id="loginForm" -->
+<form id="loginForm">
+    
+    <!-- 2. Cari input untuk Username/Email, kasih id="username" -->
+    <input type="text" id="username" placeholder="Username Anda" required>
+    
+    <!-- 3. Cari input untuk Password, kasih id="password" -->
+    <input type="password" id="password" placeholder="Password Anda" required>
+    
+    <!-- 4. Selipkan kode ini di atas atau di bawah tombol LOGIN buat tempat muncul teks eror -->
+    <div id="alertBox" class="alert" style="display:none; color: red; text-align: center; margin-top: 10px;"></div>
+    
+    <!-- 5. Tombol submit bawaan template kamu -->
+    <button type="submit">Login</button>
+</form>
 			</div>
 		</div>
 	</div>
@@ -96,6 +111,9 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-
+<!-- Taruh di sini ya -->
+    <script src="js/login.js"></script>
+</body>
+</html>
 </body>
 </html>
