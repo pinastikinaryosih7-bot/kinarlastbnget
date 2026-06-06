@@ -5,16 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Menu Restoran Sora & Haru.">
         <title>Sora & Haru — Sajian Meja</title>
+        
         <!-- CSS FILES --> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                       
-<link href="css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Jalur Cadangan: Menggunakan CDN resmi agar ikon dijamin langsung muncul -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-<link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                       
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Jalur CDN Cadangan agar ikon sosmed/navigasi aman -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+        <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
     </head>
     
     <body>
@@ -38,33 +39,36 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 col-12 mx-auto">
-                            <h1 class="text-white">Sajian Istimewa</h1>
-                            <strong class="text-white">Dari camilan pinggir jalan yang legendaris hingga hidangan utama kerajaan.</strong>
+                            <h1 class="text-white">Daftar Rasa Kuliner Korea</h1>
+                            <strong class="text-white">Dikurasi dengan penuh harmoni untuk setiap waktu berharga Anda.</strong>
                         </div>
                     </div>
                 </div>
                 <div class="overlay"></div>
             </header>
 
-            <section class="menu section-padding">
+            <!-- ================= KATEGORI 1: SARAPAN ================= -->
+            <section class="menu section-padding bg-white">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12"><h2 class="mb-lg-5 mb-4">Menu Hansik Tradisional</h2></div>
+                        <div class="col-12"><h2 class="mb-lg-5 mb-4" style="border-left: 5px solid #dc3545; padding-left: 15px;">Pagi Hari: Sarapan (아침식사)</h2></div>
                         
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Menu Baru: Gimbap -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="menu-thumb">
-                                <img src="images/menu/samgyeopsal.jpg" class="img-fluid menu-image" alt="Samgyeopsal">
+                                <img src="images/menu/gimbap.jpg" class="img-fluid menu-image" alt="Gimbap" style="width: 100%; height: 250px; object-fit: cover;">
                                 <div class="menu-info d-flex flex-wrap align-items-center">
-                                    <h4 class="mb-0">Premium Samgyeopsal</h4>
-                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>130k</span>
-                                    <p class="menu-description-text">Slices daging perut sapi/perut berkualitas tinggi, disajikan dengan ssambap dan selada segar.</p>
+                                    <h4 class="mb-0">Classic Gimbap</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>35k</span>
+                                    <p class="menu-description-text">Nasi gulung rumput laut isi sayuran, telur, dan acar lobak yang praktis serta padat nutrisi di pagi hari.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Menu dari Beranda/Menu Lama: Japchae -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="menu-thumb">
-                                <img src="images/menu/japchae.jpg" class="img-fluid menu-image" alt="Japchae">
+                                <img src="images/menu/japchae.jpg" class="img-fluid menu-image" alt="Japchae" style="width: 100%; height: 250px; object-fit: cover;">
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <h4 class="mb-0">Classic Japchae</h4>
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>65k</span>
@@ -73,13 +77,149 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Menu Baru: Juk -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="menu-thumb">
-                                <img src="images/menu/kimchi-bokeumbap.jpg" class="img-fluid menu-image" alt="Nasi Goreng Kimchi">
+                                <img src="images/menu/dakjuk.jpg" class="img-fluid menu-image" alt="Dakjuk" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Dakjuk (Bubur Ayam)</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>40k</span>
+                                    <p class="menu-description-text">Bubur beras lembut Korea berkaldu ayam kental yang hangat dan ramah untuk memulai hari.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= KATEGORI 2: MAKAN SIANG ================= -->
+            <section class="menu section-padding bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><h2 class="mb-lg-5 mb-4" style="border-left: 5px solid #dc3545; padding-left: 15px;">Tengah Hari: Makan Siang (점심식사)</h2></div>
+                        
+                        <!-- Menu dari Menu Lama: Kimchi Bokkeumbap -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/kimchi-bokeumbap.jpg" class="img-fluid menu-image" alt="Nasi Goreng Kimchi" style="width: 100%; height: 250px; object-fit: cover;">
                                 <div class="menu-info d-flex flex-wrap align-items-center">
                                     <h4 class="mb-0">Kimchi Bokkeumbap</h4>
                                     <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>58k</span>
                                     <p class="menu-description-text">Nasi goreng berkarakter kuat dari kombinasi Kimchi fermentasi matang dan telur mata sapi.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu dari Beranda: Sundubu Jjigae -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/seafood-sundubu.jpg" class="img-fluid menu-image" alt="Sundubu Jjigae" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Sundubu Jjigae</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>78k</span>
+                                    <p class="menu-description-text">Sup tahu sutra pedas dengan paduan makanan laut segar dan telur setengah matang.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Baru: Bibimbap -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/carousel/bibimbap.jpg" class="img-fluid menu-image" alt="Bibimbap" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Jeonju Bibimbap</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>68k</span>
+                                    <p class="menu-description-text">Mangkuk nasi hangat dengan aneka namul (sayuran), daging sapi, dan gochujang yang menggugah energi siang.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= KATEGORI 3: MAKAN MALAM ================= -->
+            <section class="menu section-padding bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><h2 class="mb-lg-5 mb-4" style="border-left: 5px solid #dc3545; padding-left: 15px;">Petang Hari: Makan Malam (저녁식사)</h2></div>
+                        
+                        <!-- Menu dari Beranda: Gwangyang Bulgogi -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/gwangyang-bulgogi.jpg" class="img-fluid menu-image" alt="Bulgogi" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Gwangyang Bulgogi</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>145k</span>
+                                    <p class="menu-description-text">Irisan tipis daging sapi premium dimarinasi manis gurih khas Gwangyang.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu dari Menu Lama: Samgyeopsal -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/samgyeopsal.jpg" class="img-fluid menu-image" alt="Samgyeopsal" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Premium Samgyeopsal</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>130k</span>
+                                    <p class="menu-description-text">Slices daging perut sapi berkualitas tinggi, disajikan dengan ssambap dan selada segar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Baru: Galbitang -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/galbitang.jpg" class="img-fluid menu-image" alt="Galbitang" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Galbitang premium</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>110k</span>
+                                    <p class="menu-description-text">Sup iga sapi bening yang kaya bumbu, dimasak perlahan hingga daging lembut lepas dari tulang.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= KATEGORI 4: CAMILAN ================= -->
+            <section class="menu section-padding bg-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12"><h2 class="mb-lg-5 mb-4" style="border-left: 5px solid #dc3545; padding-left: 15px;">Selingan Waktu: Camilan &amp; Jajanan (간식)</h2></div>
+                        
+                        <!-- Menu dari Beranda: Tteokbokki -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/tteokbokki-cheese.jpg" class="img-fluid menu-image" alt="Tteokbokki" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Cheesy Tteokbokki</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>55k</span>
+                                    <p class="menu-description-text">Kue beras kenyal bersaus gochujang pedas dengan lelehan keju mozzarella melimpah.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Baru: Mandu -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/mandu.jpg" class="img-fluid menu-image" alt="Mandu" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Fried Mandu</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>45k</span>
+                                    <p class="menu-description-text">Pangsit goreng renyah khas Korea dengan isian cincangan daging dan sayuran gurih juicy.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Menu Baru: Corn Dog -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="menu-thumb">
+                                <img src="images/menu/corndog.jpg" class="img-fluid menu-image" alt="Corn Dog" style="width: 100%; height: 250px; object-fit: cover;">
+                                <div class="menu-info d-flex flex-wrap align-items-center">
+                                    <h4 class="mb-0">Gamja Corn Dog</h4>
+                                    <span class="price-tag bg-white shadow-lg ms-4"><small>Rp</small>38k</span>
+                                    <p class="menu-description-text">Sosis mozzarella goreng berbalut potongan kentang krispi yang viral dan memikat.</p>
                                 </div>
                             </div>
                         </div>
@@ -90,9 +230,10 @@
 
         <footer class="site-footer section-padding">
             <div class="container text-center">
-                <p class="copyright-text">Copyright © 2026 Sora &amp; Haru Dining Co., Ltd.</p>
+                <p class="copyright-text">Copyright © 2026 Sora &amp; Haru Dining Co., Ltd. All Rights Reserved.</p>
             </div>
         </footer>
+        
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
     </body>
