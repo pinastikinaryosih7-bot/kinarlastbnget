@@ -637,7 +637,7 @@ strong {
 #BookingModal .modal-content::before {
   content: "";
   background-color: var(--white-color);
-  background-image: url('../images/sincerely-media-HoEYgBL_Gcs-unsplash.jpg');
+  background-image: url('../images/slide/polkadott.jpg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
