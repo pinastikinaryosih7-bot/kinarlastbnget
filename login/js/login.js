@@ -18,9 +18,8 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
             
             // Simpan nama yang login ke dalam session storage browser
             sessionStorage.setItem('username', usernameInput);
-            
-            // Pindah halaman keluar dari folder login, balik ke Beranda Utama (Sora & Haru)
-            window.location.href = '../index.html';
+            window.location.href = '../index.html'; //
+        
         } else {
             alertBox.style.display = 'block';
             alertBox.innerText = 'Username atau Password salah!';
