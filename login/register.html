@@ -20,6 +20,19 @@
 	<link rel="stylesheet" type="text/css" href="./css/util.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 <!--===============================================================================================-->
+	<style>
+		/* Efek transisi pas tombol disentuh mouse */
+		.btn-custom-action:hover {
+			background-color: #cccccc !important;
+			transform: scale(1.02);
+			transition: all 0.2s ease-in-out;
+		}
+		.btn-home-action:hover {
+			background-color: #f2f2f2 !important;
+			transform: scale(1.02);
+			transition: all 0.2s ease-in-out;
+		}
+	</style>
 </head>
 <body>
 	
@@ -64,24 +77,35 @@
 						</span>
 					</div>
 					
-					<!-- WADAH PESAN ERROR SAMA SEPERTI DI LOGIN -->
-					<div id="alertBox" class="alert" style="display:none; color: red; text-align: center; margin-top: 10px; font-weight: bold; font-size: 14px;"></div>
-					<p id="message"></p>
-					
-					<!-- TOMBOL DAFTAR -->
+					<!-- TOMBOL UTAMA: DAFTAR -->
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit">
 							Daftar
 						</button>
 					</div>
 
-					<!-- LINK UNTUK KEMBALI KE HALAMAN LOGIN -->
-					<div class="text-center p-t-136">
-						<a class="txt2" href="login.html">
-							Sudah punya akun? Login di sini
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+					<!-- TOMBOL TAMBAHAN BERJEJER: LOGIN (KEMBALI) & GOOGLE -->
+					<div class="p-t-15 p-b-10" style="display: flex; gap: 10px; width: 100%;">
+						<!-- Pindah ke Login Kembali -->
+						<a href="login.html" class="txt2 text-center p-t-12 p-b-12 btn-custom-action" style="background: #e6e6e6; color: #333333; font-weight: bold; border-radius: 25px; flex: 1; display: block; text-decoration: none;">
+							LOGIN
 						</a>
+						<!-- Tombol Google Interaktif -->
+						<button type="button" onclick="aksiTombolGoogleRegister()" class="txt2 text-center p-t-12 p-b-12 btn-custom-action" style="background: #e6e6e6; color: #333333; font-weight: bold; border-radius: 25px; flex: 1; border: none; cursor: pointer;">
+							<i class="fa fa-google" aria-hidden="true"></i> Google
+						</button>
 					</div>
+
+					<!-- TOMBOL HOME PUTIH PANJANG BIAR NAVIGASI AMAN -->
+					<div class="w-100 p-t-5">
+						<button class="text-center p-t-12 p-b-12 w-100 btn-home-action" type="button" onclick="location.href='../index.html';" style="background: #ffffff; color: #333333; font-weight: bold; border-radius: 25px; border: 1px solid #e6e6e6; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+							Home
+						</button>
+					</div>
+
+					<!-- WADAH NOTIFIKASI HIJAU DI PALING BAWAH (SAMA SEPERTI DI LOGIN) -->
+					<div id="alertBox" class="alert" style="display:none; color: green; text-align: center; margin-top: 15px; font-weight: bold; font-size: 14px;"></div>
+					<p id="message"></p>
 				</form>
 			</div>
 		</div>
@@ -101,6 +125,17 @@
 			scale: 1.1
 		})
 	</script>
+
+	<!-- SCRIPT UNTUK AKSI INTERAKSI GOOGLE REGISTER -->
+	<script>
+		function aksiTombolGoogleRegister() {
+			var alertBox = document.getElementById('alertBox');
+			alertBox.style.display = 'block';
+			alertBox.style.color = 'green';
+			alertBox.innerHTML = 'Menghubungkan ke Google...';
+		}
+	</script>
+
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 	
