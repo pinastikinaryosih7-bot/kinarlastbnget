@@ -30,13 +30,15 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<!-- DI SINI KITA PASANG id="loginForm" PADA FORM ASLI TEMPLATE -->
+				<form class="login100-form validate-form" id="loginForm">
 					<span class="login100-form-title">
 						Member Login
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+					<div class="wrap-input100 validate-input" data-validate = "Valid username is required">
+						<!-- DI SINI KITA PASANG id="username" DAN TYPE="TEXT" -->
+						<input class="input100" type="text" id="username" name="email" placeholder="Username Anda" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -44,15 +46,20 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<!-- DI SINI KITA PASANG id="password" -->
+						<input class="input100" type="password" id="password" name="pass" placeholder="Password Anda" required>
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
 					</div>
 					
+					<!-- WADAH PESAN ERROR UNTUK NOTIFIKASI JIKALAU LOGIN GAGAL -->
+					<div id="alertBox" class="alert" style="display:none; color: red; text-align: center; margin-top: 10px; font-weight: bold; font-size: 14px;"></div>
+					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<!-- DI SINI KITA PASTIIN TOMBOLNYA MENGGUNAKAN TYPE="SUBMIT" -->
+						<button class="login100-form-btn" type="submit">
 							Login
 						</button>
 					</div>
@@ -73,27 +80,9 @@
 						</a>
 					</div>
 				</form>
-				<!-- 1. Pastikan tag form bawaan template kamu dikasih id="loginForm" -->
-<form id="loginForm">
-    
-    <!-- 2. Cari input untuk Username/Email, kasih id="username" -->
-    <input type="text" id="username" placeholder="Username Anda" required>
-    
-    <!-- 3. Cari input untuk Password, kasih id="password" -->
-    <input type="password" id="password" placeholder="Password Anda" required>
-    
-    <!-- 4. Selipkan kode ini di atas atau di bawah tombol LOGIN buat tempat muncul teks eror -->
-    <div id="alertBox" class="alert" style="display:none; color: red; text-align: center; margin-top: 10px;"></div>
-    
-    <!-- 5. Tombol submit bawaan template kamu -->
-    <button type="submit">Login</button>
-</form>
 			</div>
 		</div>
 	</div>
-	
-	
-
 	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -111,9 +100,7 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-<!-- Taruh di sini ya -->
+	<!-- LOGIKA LOGIN KAMU DIPANGGIL DI SINI -->
     <script src="js/login.js"></script>
-</body>
-</html>
 </body>
 </html>
