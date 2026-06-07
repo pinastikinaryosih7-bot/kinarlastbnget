@@ -40,11 +40,12 @@
                         <li class="nav-item"><a class="nav-link" href="news.html">Jurnal Rasa</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Ruang Temu</a></li>
                         <li class="nav-item" id="authArea">
-       <li class="nav-item" id="authArea">
-        <a class="nav-link" href="login/login.html" style="font-weight: bold; color: #ff4e4e;">LOGIN</a>
-    </li>
-</ul>
-                    </ul>
+       <!-- Bagian Auth Area untuk Login/Logout otomatis -->
+                    <li class="nav-item" id="authArea">
+                        <span class="nav-link" id="userInfo" style="display: inline-block; color: #555; margin-right: 10px;">Belum login</span>
+                        <a class="nav-link" href="login/login.html" id="authButton" style="display: inline-block; font-weight: bold; color: #ff4e4e;">LOGIN</a>
+                    </li>
+                </ul>
                 </div>
 
                 <div class="d-none d-lg-block">
@@ -192,7 +193,8 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
         <!-- Taruh kode ini di ujung bawah file index.html beranda ya -->
-    <script src="js/welcome.js"></script>
+    
+        <script src="login/js/welcome.js"></script>
 </body>
 </html>
     </body>
