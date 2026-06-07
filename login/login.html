@@ -20,6 +20,19 @@
 	<link rel="stylesheet" type="text/css" href="./css/util.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 <!--===============================================================================================-->
+	<style>
+		/* Efek interaktif pas tombol DAFTAR, Google, dan Home disorot kursor */
+		.btn-custom-action:hover {
+			background-color: #cccccc !important;
+			transform: scale(1.02);
+			transition: all 0.2s ease-in-out;
+		}
+		.btn-home-action:hover {
+			background-color: #f2f2f2 !important;
+			transform: scale(1.02);
+			transition: all 0.2s ease-in-out;
+		}
+	</style>
 </head>
 <body>
 	
@@ -65,18 +78,18 @@
 					<!-- 2. TOMBOL DAFTAR & GOOGLE BERJEJER DI TENGAH (BARIS 30-32 LKPD) -->
 					<div class="p-t-15 p-b-10" style="display: flex; gap: 10px; width: 100%;">
 						<!-- Tombol Daftar (Abu-abu) -->
-						<a href="register.html" class="txt2 text-center p-t-12 p-b-12" style="background: #e6e6e6; color: #333333; font-weight: bold; border-radius: 25px; flex: 1; display: block; text-decoration: none;">
+						<a href="register.html" class="txt2 text-center p-t-12 p-b-12 btn-custom-action" style="background: #e6e6e6; color: #333333; font-weight: bold; border-radius: 25px; flex: 1; display: block; text-decoration: none;">
 							DAFTAR
 						</a>
-						<!-- Tombol Google (Abu-abu) -->
-						<div class="txt2 text-center p-t-12 p-b-12" style="background: #e6e6e6; color: #333333; border-radius: 25px; flex: 1;">
+						<!-- Tombol Google Otomatis (Bisa Diklik & Simulasi Login) -->
+						<button type="button" onclick="loginPakeGoogle()" class="txt2 text-center p-t-12 p-b-12 btn-custom-action" style="background: #e6e6e6; color: #333333; font-weight: bold; border-radius: 25px; flex: 1; border: none; cursor: pointer;">
 							<i class="fa fa-google" aria-hidden="true"></i> Google
-						</div>
+						</button>
 					</div>
 
 					<!-- 3. TOMBOL HOME PUTIH PANJANG (BARIS 34 LKPD) -->
 					<div class="w-100 p-t-5">
-						<button class="text-center p-t-12 p-b-12 w-100" type="button" onclick="location.href='../index.html';" style="background: #ffffff; color: #333333; font-weight: bold; border-radius: 25px; border: 1px solid #e6e6e6; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+						<button class="text-center p-t-12 p-b-12 w-100 btn-home-action" type="button" onclick="location.href='../index.html';" style="background: #ffffff; color: #333333; font-weight: bold; border-radius: 25px; border: 1px solid #e6e6e6; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
 							Home
 						</button>
 					</div>
@@ -102,6 +115,27 @@
 			scale: 1.1
 		})
 	</script>
+	
+	<!-- FUNGSI LOGIKA SAKTI TOMBOL GOOGLE -->
+	<script>
+		function loginPakeGoogle() {
+			// 1. Isikan otomatis username dan password bawaan LKPD
+			document.getElementById('username').value = 'heri';
+			document.getElementById('password').value = '123';
+			
+			// 2. Beri efek animasi sedikit seolah-olah loading login
+			var alertBox = document.getElementById('alertBox');
+			alertBox.style.display = 'block';
+			alertBox.style.color = 'green';
+			alertBox.innerHTML = 'Menghubungkan ke Google...';
+			
+			// 3. Picu fungsi submit form asli secara otomatis setelah 1 detik
+			setTimeout(function(){
+				$('#loginForm').submit();
+			}, 1000);
+		}
+	</script>
+
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 	<!-- LOGIKA LOGIN KAMU DIPANGGIL DI SINI -->
